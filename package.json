@@ -1,0 +1,31 @@
+{
+  "name": "youthsafe",
+  "version": "1.0.0",
+  "description": "An AI-powered Chrome extension to monitor and restrict YouTube viewing for children.",
+  "main": "background.js",
+  "scripts": {
+    "prebuild": "rm -rf node_modules/public-encrypt/test",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "events": "^3.3.0",
+    "https-browserify": "^1.0.0",
+    "openai": "^3.2.1",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0",
+    "youtube-browser-api": "^0.0.3",
+    "youtube-sr": "^4.3.4",
+    "youtube-transcript": "^1.0.5"
+  },
+  "devDependencies": {
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
